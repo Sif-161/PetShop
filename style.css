@@ -1,5 +1,13 @@
-
-.hedr{
+html, body{
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrap{
+    margin-inline: 200px;
+}
+.menu{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -12,33 +20,105 @@
     margin-right: auto;
 }
 
-header{
-    margin-inline: 200px;
-    background-color: aqua;
-}
-
-.hedr li:not(#logo){
-    padding: 14px 20px;
+.menu li:not(#logo){
+    padding: 14px 16px;
     margin-top: 30px;
 }
-.material-symbols-outlined{
+
+.menu i{
+    font-size: 25px;
     color: black;
 }
-nav{
-    background-color: blueviolet;
+
+.menu i:hover{
+    background-color: #11111127;
+    border-radius: 50%;
 }
-.sections{
+
+nav{
+    box-shadow: 0px 14px 22px;
+    background-color: purple;
+}
+.navbar{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
 }
-.sections li{
-    padding: 14px 20px;
+.navbar li{
+    float: left;
 }
 
-.sections li a{
+.navbar li a{
+    display: block;
+    font-size: 20px;
     text-decoration: none;
     color: black;
+    padding: 14px 20px;
+}
+.navbar li a:hover{
+    background-color: #11111127;
+}
+
+.slideshow {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#slide-1 img{
+    border-radius: 6%;
+    box-shadow: 14px 14px 20px;
+}
+
+.message{
+    text-align: center;
+}
+
+.message p{
+    font-size: medium;
+}
+
+#sm{
+    font-size: 18px;
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.303);
+    bottom: 0;
+    width: 98.6%;
+    padding: 10px;
+}
+
+.social-media{
+    margin: 50px;
+}
+
+.sm-itens i{
+    margin-right: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.others{
+    text-align: center;
+    font-size: 12px;
+}   
+
+.info{
+    display: inline-flex;
+    gap: 10px;
+}
+
+.links{
+    margin-top: 5px;
+}
+
+.others a{
+    display: inline-block;
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
 }
