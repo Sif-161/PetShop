@@ -1,0 +1,44 @@
+
+.hedr{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+#logo{
+    margin-right: auto;
+}
+
+header{
+    margin-inline: 200px;
+    background-color: aqua;
+}
+
+.hedr li:not(#logo){
+    padding: 14px 20px;
+    margin-top: 30px;
+}
+.material-symbols-outlined{
+    color: black;
+}
+nav{
+    background-color: blueviolet;
+}
+.sections{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.sections li{
+    padding: 14px 20px;
+}
+
+.sections li a{
+    text-decoration: none;
+    color: black;
+}
