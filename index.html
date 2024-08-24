@@ -12,9 +12,9 @@
     <header>
         <div class="wrap">
             <ul class="menu">
-                <li id="logo"><a href="index.html"><img src="images/PetVille-no-background.png" alt="logo" ></a></li>
-                <li><a href="pages/contact.html"><i class="bi bi-telephone"></i></a></li>
-                <li><a href="pages/bag.html"><i class="bi bi-bag"></i></a></li>
+                <li id="logo"><a href="index.html"><img src="images/logo.png" alt="logo" ></a></li>
+                <li><a href="pages/contact.html" aria-label="Contato" title="Contato"><i class="bi bi-telephone"></i></a></li>
+                <li><a href="pages/bag.html" aria-label="Carinho" title="Carrinho"><i class="bi bi-bag"></i></a></li>
             </ul>
         </div>    
         <nav>
@@ -33,24 +33,128 @@
     <section class="hero-section">
         <div class="slideshow">
             <div id="slide-1">
-                <img src="images/slide-1.webp" alt="">
+                <img src="images/slide-1.webp" alt="banner-1">
             </div>
         </div>
-        <div class="message">
+        <article style="text-align: center;">
             <h1>Bem-vindo ao PetVille!</h1>
-            <p>Aqui, cada visita é especial. Oferecemos produtos premium e serviços personalizados em um ambiente acolhedor, <br>com uma equipe apaixonada pronta para cuidar do seu pet como se fosse nosso. Venha nos conhecer e descubra <br>porque somos o lugar favorito dos pets e seus donos!</p>
-        </div>
+            <p style="font-size: medium;">Aqui, cada visita é especial. Oferecemos produtos premium e serviços personalizados em um ambiente acolhedor, <br>com uma equipe apaixonada pronta para cuidar do seu pet como se fosse nosso. Venha nos conhecer e descubra <br>porque somos o lugar favorito dos pets e seus donos!</p>
+        </article>
     </section>
+    <main>
+        <h1 id="title">Produtos mais Vendidos</h1>
+        <section class="products-grid">
+            <article class="products">
+                <figure>
+                    <img src="images/prod-1.webp" alt="Ração Nutrilus">
+                    <figcaption>Ração Seca Nutrilus Pro Carne para Cães Adultos</figcaption>
+                    <span><b>R$161,42</b></span>
+                    <br>
+                    <button id="b" title="Adicionar ao carrinho" type="button"><b>Adicionar</b></button>
+                </figure>
+            </article>
+            <article class="products">
+                <figure>
+                    <img src="images/prod-2.webp" alt="Areia Meau">
+                    <figcaption>Areia Higiênica Meau Biodegradável Grãos Médios para Gatos</figcaption>
+                    <span><b>R$158,32</b></span>
+                    <br>
+                    <button id="b" title="Adicionar ao carrinho" type="button"><b>Adicionar</b></button>
+                </figure>
+            </article>
+            <article class="products">
+                <figure>
+                    <img src="images/prod-3.webp" alt="Tapete Meau">
+                    <figcaption>Tapete Higiênico Meau Cheirinho Cítrico para Cães</figcaption>
+                    <span><b>R$60,30</b></span>
+                    <br>
+                    <button id="b" title="Adicionar ao carrinho" type="button"><b>Adicionar</b></button>
+                </figure>
+            </article>
+            <article class="products">
+                <figure>
+                    <img src="images/prod-4.webp" alt="Ração Suprema">
+                    <figcaption>Ração Seca Suprema Sabor Carne para Cães Adultos</figcaption>
+                    <span><b>R$127,92</b></span>
+                    <br>
+                    <button id="b" title="Adicionar ao carrinho" type="button"><b>Adicionar</b></button>
+                </figure>
+            </article>
+            <article class="products">
+                <figure>
+                    <img src="images/prod-5.jpg" alt="Ração Felix">
+                    <figcaption>Ração Úmida Nestlé Purina Felix Fantastic Tiritas Carne para Gatos Adultos</figcaption>
+                    <span><b>R$1,20</b></span>
+                    <br>
+                    <button id="b" title="Adicionar ao carrinho" type="button"><b>Adicionar</b></button>
+                </figure>
+            </article>
+            <article class="products">
+                <figure>
+                    <img src="images/prod-6.jpg" alt="Ração Liva">
+                    <figcaption>Ração Seca Liva Super Premium para Cães Adultos de Raças Grandes e Gigantes</figcaption>
+                    <span><b>R$263,42</b></span>
+                    <br>
+                    <button id="b" title="Adicionar ao carrinho" type="button"><b>Adicionar</b></button>
+                </figure>
+            </article>
+            <article class="products">
+                <figure>
+                    <img src="images/prod-7.webp" alt="Tapete Future">
+                    <figcaption>Tapete Higiênico Future Pet Carvão Ativado para Cães</figcaption>
+                    <span><b>R$87,12</b></span>
+                    <br>
+                    <button id="b" title="Adicionar ao carrinho" type="button"><b>Adicionar</b></button>
+                </figure>
+            </article>
+        </section>
+        <br>
+        <section class="container">
+            <div class="section services-section">
+                <h1 style="color: white;">Nossos Serviços!</h1>
+                <article class="services-itens">
+                    <img src="images/serv-1.jpg" alt="Banho e Tosa">
+                    <div class="services-content">
+                        <h2>Banho e Tosa</h2>
+                        <p>Oferecemos serviços completos de banho e tosa para cães e gatos, utilizando produtos de alta qualidade e técnicas especializadas para garantir o bem-estar do seu pet</p>
+                    </div>
+                </article>
+                <article class="services-itens">
+                    <img src="images/serv-2.png" alt="Consultas Veterinárias">
+                    <div class="services-content">
+                        <h2>Consultas Veterinárias</h2>
+                        <p>Nossos veterinários estão prontos para atender seu pet com consultas de rotina, vacinas, exames e tratamentos específicos para garantir a saúde e felicidade do seu animal</p>
+                    </div>
+                </article>
+            </div>
+            <div class="section employee-section">
+                <h1 style="color: white;">Nossa Equipe!</h1>
+                <article class="employee-itens">
+                    <img src="images/emp-1.webp" alt="julia lima">
+                    <div class="employee-content">
+                        <h2>Júlia Lima - Especialista em Tosa e Banho</h2>
+                        <p>Nossa especialista em tosa e banho cuida de cada pet com muito carinho e habilidade, garantindo que seu amigo de quatro patas fique limpo e com um visual incrível</p>
+                    </div>
+                </article>
+                <article class="employee-itens">
+                    <img src="images/emp-2.jpg" alt="Dr. Carlos Almeida">
+                    <div class="employee-content">
+                        <h2>Dr. Carlos Almeida - Veterinário Chefe</h2>
+                        <p>Com mais de 15 anos de experiência em clínica veterinária, o Dr. Carlos é especialista em cuidados preventivos e tratamentos complexos. Ele é conhecido por seu carinho e dedicação aos animais.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <h1>uyg</h1>
+    </main>
     <footer>
-        <section class="social-media">
-            <div>
-                <p id="sm">Redes Sociais</p>
-                <div class="sm-itens">
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-tiktok"></i></a>
-                    <a href=""><i class="bi bi-youtube"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                </div>
+        <section class="main">
+            <div class="social-media">
+                <p style="font-size: 18px;"><b>Redes Sociais</b></p>
+                <a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="TikTok" title="TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="#" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
             </div>
         </section>
         <section class="others">
@@ -59,11 +163,11 @@
                 <p>Telefone: (75) 986352875</p>
                 <p>Endereço: Rua das Flores, 789 - Jardim das Estrelas - Belo Horizonte - MG - CEP: 30140-120</p>
             </div>
-            <div class="links">
+            <div class="links" style="margin-top: 5px;">
                 <a href="">Políticas de Privacidade</a>
                 <a href="">Termos de Serviço</a>
             </div>
         </section>
     </footer>
 </body>
-</html> 
+</html>
