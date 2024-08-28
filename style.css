@@ -125,7 +125,7 @@ main h1{
 
 .services-itens{
     background-color: white;
-    margin: 0 32px;
+    margin-left: 6%;
     display: flex;
     width: 78%;
     border-radius: 10px 10px 10px;
@@ -157,7 +157,7 @@ main h1{
 
 .employee-itens{
     background-color: white;
-    margin: 0 32px;
+    margin-left: 6%;
     display: flex;
     width: 78%;
     border-radius: 10px 10px 10px;

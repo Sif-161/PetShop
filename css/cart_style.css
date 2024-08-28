@@ -1,0 +1,40 @@
+.box{
+    margin-top: 5%;
+    background-color: rgba(79,32,150,255);
+    overflow: auto;
+    padding-bottom: 3%;
+}
+
+.box #title{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    color: white;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.products img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.products figcaption{
+    max-width: 400px;
+}
+
+.box-itens{
+    float: left;
+    background-color: white;
+    width: 50%;
+}
+
+aside{
+    float: right;
+    background-color: black;
+    width: 50%;
+}
