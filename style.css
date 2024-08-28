@@ -19,16 +19,19 @@ html, body{
 }
 
 .hero-section{
-   background-color: rgba(243,238,232,255);
-   padding: 0 0 20px;
-   margin: 30px 0 0;
-   text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(243,238,232,255);
+    padding-bottom: 1%;
+    margin-top: 30px;
+    width: auto;
+    
 }
 .hs-itens{
     color: #ddd;
     text-align: center;
     width: 40%;
-    margin-left: 440px;
     background-color: rgba(79,32,150,255);
     border-radius: 10px 10px 10px 10px;
     padding: 10px 0 10px 0;
