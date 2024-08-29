@@ -33,8 +33,7 @@ html, body{
 }
 
 .menu i:hover{
-    background-color: #11111127;
-    border-radius: 50%;
+    color: rgba(120,92,186,255);
 }
 
 nav{

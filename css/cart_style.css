@@ -1,15 +1,30 @@
-.box{
+.container{
+    display: flex;
+    justify-content: space-between;
     margin-top: 5%;
-    background-color: rgba(79,32,150,255);
-    overflow: auto;
-    padding-bottom: 3%;
+    color: rgba(79,32,150,255);
 }
 
-.box #title{
+.card h1{
     margin-left: 5%;
-    margin-bottom: 3%;
-    color: white;
 }
+
+.card{
+    margin-left: 8%;
+    background-color: rgba(120, 92, 186, 0.39);
+    border-radius: 5px 5px 13px 13px;
+}
+
+.card-itens{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 4.8%;
+    background-color: white;
+    max-width: 90%;
+    margin-bottom: 3%;
+}
+
 
 .products{
     display: flex;
@@ -18,23 +33,55 @@
 }
 
 .products img{
-    width: 150px;
+    width: 120px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
+    
 }
 
 .products figcaption{
-    max-width: 400px;
+    max-width: 40%;
+    color: rgb(88, 88, 88);
 }
 
-.box-itens{
-    float: left;
-    background-color: white;
-    width: 50%;
+.amount{
+    display: flex;
+    align-items: center;
+    max-width: 13%;
+    gap: 5px;
 }
+
+.amount button{
+    border: none;
+    background-color: transparent;
+    color: rgba(79,32,150,255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.amount input{
+    text-align: center;
+    max-width: 20%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
 
 aside{
-    float: right;
-    background-color: black;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(120, 92, 186, 0.39);
+    margin-right: 8%;
+    border-radius: 5px 5px 13px 13px;
+    width: 25%;
+}
+
+.cep{
+    background-color: white;
+}
+
+.text-address{
+    margin: 0 auto;
+    width: 70%;
 }
