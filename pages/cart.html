@@ -36,7 +36,7 @@
     <main>
         <section class="container">
             <div class="card">
-                <h1 id="title">Meu carrinho</h1>
+                <h1 id="title" style="margin-left: 5.2%;">Meu carrinho</h1>
                 <article class="card-itens">
                     <figure class="products">
                         <img src="../images/prod-1.webp">
@@ -47,7 +47,7 @@
                             <button>+</button>
                         </div>
                         <span><b>R$161,42</b></span>
-                        <a href="#" title="Remover do carrinho"><i class="bi bi-trash-fill"></i></a>
+                        <a href="#" title="Remover do carrinho" id="delete"><i class="bi bi-trash-fill"></i></a>
                     </figure>
                 </article>
                 <article class="card-itens">
@@ -60,20 +60,33 @@
                             <button>+</button>
                         </div>
                         <span><b>R$158,32</b></span>
-                        <a href="#" title="Remover do carrinho"><i class="bi bi-trash-fill"></i></a>
+                        <a href="#" title="Remover do carrinho" id="delete"><i class="bi bi-trash-fill"></i></a>
                     </figure>
                 </article>
             </div>
             <aside>
                 <div class="cep">
-                    <h1 style="text-align: center">Consulta de CEP</h1>
+                    <h1 style="text-align: start">Consulta de CEP</h1>
                     <div class="box">
                         <div class="text">
                             <input placeholder="Digite o CEP..." type="text" id="cepInput">
                             <button onclick="buscarEndereco()">Buscar</button>
                         </div>
                     </div>
-                    <div class="text-address"><p id="endereco"></p></div>
+                    <div class="text-address">
+                        <p id="endereco"></p>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h1 style="text-align: start">Resumo do pedido</h1>
+                    <div class="order-prod">
+                        <span>Valor dos produtos(2 itens)</span>
+                        <span>5</span>
+                    </div>
+                    <div class="order-total">
+                        <strong>Total</strong>
+                        <strong>8</strong>
+                    </div>
                 </div>
             </aside>
         </section>
