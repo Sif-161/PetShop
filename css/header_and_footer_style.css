@@ -83,6 +83,16 @@ html, body {
 .icons i:hover {
     color: rgb(120, 92, 186);
 }
+.login {
+    border: 1px solid white;
+}
+
+
+
+.login i{
+    font-size: 25px;
+    color: white;
+}
 
 /*Navbar*/
 nav {

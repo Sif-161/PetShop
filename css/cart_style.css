@@ -2,6 +2,11 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
+    background-color: rgba(120, 92, 186, 0.39);
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
 }
 
 .container-card {
@@ -10,10 +15,10 @@ main {
 }
 
 .card {
-    background-color: rgba(120, 92, 186, 0.39);
     border-radius: 5px 5px 13px 13px;
     padding-bottom: 1%;
     padding-top: 1%;
+    width: 90%;
 }
 
 .card-itens {
@@ -22,7 +27,7 @@ main {
     border-radius: 10px;
     margin-left: 4.8%;
     background-color: white;
-    width: 90%;
+    width: 100%;
     margin-bottom: 3%;
 }
 
@@ -33,7 +38,7 @@ main {
 }
 
 .products img {
-    width: 50px;
+    width: 90px;
     height: auto;
     border-radius: 10px;
 }
@@ -44,7 +49,7 @@ main {
 }
 
 .products span{
-    font-size: smaller;
+    font-size: medium;
 }
 
 .products i{
@@ -84,7 +89,6 @@ main {
 }
 
 aside {
-    background-color: rgba(120, 92, 186, 0.39);
     border-radius: 5px 5px 13px 13px;
     padding: 20px;
 }
@@ -94,7 +98,7 @@ aside {
     margin-top: 5%;
     padding: 5%;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
 }
 
 .cep button {
@@ -104,6 +108,7 @@ aside {
     border-color: rgba(234, 216, 250, 255);
     color: rgba(120, 92, 186, 255);
     margin-left: 5%;
+    font-size: large;
 }
 
 .cep button:hover{
@@ -115,6 +120,7 @@ aside {
     padding-top: 3%;
     padding-bottom: 3%;
     font-size: large;
+    width: 70%;
 }
 
 .order-prod, .order-total {
@@ -138,6 +144,9 @@ aside {
     .products figcaption{
         font-size: smaller;
     }
+    .products span{
+        font-size: smaller;
+    }
 
     .amount input{
         width: 100%;
@@ -158,6 +167,9 @@ aside {
         width: 70%;
         padding-top: 2%;
         padding-bottom: 2%;
+        font-size: small;
+    }
+    .cep button {
         font-size: small;
     }
     .text-address{
