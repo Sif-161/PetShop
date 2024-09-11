@@ -1,42 +1,44 @@
-.container{
+main {
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
-    color: rgba(79,32,150,255);
-    height: auto;
 }
 
-.card{
-    margin-left: 8%;
+.container-card {
+    flex: 2;
+    margin-left: 3%;
+}
+
+.card {
     background-color: rgba(120, 92, 186, 0.39);
     border-radius: 5px 5px 13px 13px;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 
-.card-itens{
+.card-itens {
     display: flex;
     flex-direction: column;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     margin-left: 4.8%;
     background-color: white;
     width: 90%;
     margin-bottom: 3%;
 }
 
-
-.products{
+.products {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.products img{
+.products img {
     width: 50px;
     height: auto;
-    border-radius: 10px 10px 10px 10px;
-    
+    border-radius: 10px;
 }
 
-.products figcaption{
+.products figcaption {
     width: 38%;
     color: rgb(88, 88, 88);
 }
@@ -76,32 +78,31 @@
     color: #09090966;
 }
 
-aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(120, 92, 186, 0.39);
-    margin-right: 8%;
-    border-radius: 5px 5px 13px 13px;
-    width: 25%;
-}
-.cep, .order-summary{
-    background-color: white;
-    margin-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: auto;
-    width: auto;
-    border-radius: 10px 10px 10px 10px;
-    width: 90%;
+.container-aside {
+    flex: 1;
+    margin-right: 3%;
 }
 
-.cep button{
-    border-radius: 5px 5px 5px 5px;
+aside {
+    background-color: rgba(120, 92, 186, 0.39);
+    border-radius: 5px 5px 13px 13px;
+    padding: 20px;
+}
+
+.cep, .order-summary {
+    background-color: white;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cep button {
+    border-radius: 5px;
     cursor: pointer;
-    background-color: rgba(245,229,253,255);
-    border-color: rgba(234,216,250,255);
-    color: rgba(120,92,186,255);
+    background-color: rgba(245, 229, 253, 255);
+    border-color: rgba(234, 216, 250, 255);
+    color: rgba(120, 92, 186, 255);
     margin-left: 5%;
 }
 
@@ -109,24 +110,24 @@ aside{
     background-color: #dddddd0c
 }
 
-.cep input{
-    border-radius: 5px 5px 5px 5px;
+.cep input {
+    border-radius: 5px;
     padding-top: 3%;
     padding-bottom: 3%;
     font-size: large;
 }
 
-.order-prod, .order-total{
+.order-prod, .order-total {
     display: flex;
     justify-content: space-between;
     padding-bottom: 5%;
 }
 
-
+/*Ajuste do site para notbooks*/
 @media only screen and (max-width: 90em){
     .card{
         margin-left: 3%;
-        width: 60%;
+        width: 90%;
     }
 
     .products img{
@@ -144,12 +145,12 @@ aside{
     }
 
     aside:not(.card){
-        margin-right: 3%;
-        width: 30%;
+        margin-right: 30%;
+        width: 90%;
     }
 
     .cep, .order-summary{
-        width: 70%;
+        width: 90%;
         height: auto;
     }
 
@@ -163,4 +164,3 @@ aside{
         font-size: 14px;
     }
 }
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,47 @@
     <link rel="stylesheet" href="../css/header_and_footer_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <header>
+    <header style="background-color: rgba(79, 32, 150, 1);">
         <div class="wrap">
             <ul class="menu">
-                <li id="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo" ></a></li>
-                <li><a href="../pages/contact.html" aria-label="Contato" title="Contato"><i class="bi bi-telephone-fill"></i></a></li>
-                <li><a href="#" aria-label="Carinho" title="Carrinho"><i class="bi bi-bag-fill"></i></a></li>
+                <li id="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </li>
+                <li id="search">
+                    <form action="/search" method="get">
+                        <input type="text" name="q" placeholder="Pesquisar...">
+                        <button type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </li>
+                <div class="icons-wrapper">
+                    <li class="icons">
+                        <a href="pages/contact.html" aria-label="Contato" title="Contato">
+                            <i class="bi bi-telephone-fill"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="#" aria-label="Carrinho" title="Carrinho">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                    </li>
+                </div>
             </ul>
-        </div>    
+        </div>
         <nav>
-            <div>
-                <ul class="navbar">
-                    <li><a href="#">Cachorro</a></li>
-                    <li><a href="#">Gatos</a></li>
-                    <li><a href="#">Peixes</a></li>
-                    <li><a href="#">Outros Animais</a></li>
-                    <li><a href="#">Plano de Saúde</a></li>
-                    <li><a href="#">Serviços</a></li>
-                </ul>
-            </div>
+            <ul class="navbar">
+                <li><a href="#">Cachorros</a></li>
+                <li><a href="#">Gatos</a></li>
+                <li><a href="#">Peixes</a></li>
+                <li><a href="#">Outros Animais</a></li>
+                <li><a href="#">Plano de Saúde</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -91,4 +113,5 @@
         </section>
     </footer>
 </body>
+
 </html>

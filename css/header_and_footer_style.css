@@ -1,67 +1,116 @@
-html, body{
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    position: relative;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.wrap{
-    margin-inline: 200px;
+/*Header*/
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.menu{
+
+.menu {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     display: flex;
-    justify-content: end;
-    align-items: flex-end;
+    align-items: center;
+    width: 100%;
 }
 
-#logo{
-    margin-right: auto;
+#logo {
+    flex: 0 1;
+}
+#logo img{
+    width: 125px; 
+    height: 90px;
 }
 
-.menu li:not(#logo){
-    padding: 14px 16px;
-    margin-top: 30px;
+#search {
+    flex: 1;
+    text-align: center;
 }
 
-.menu i{
-    font-size: 25px;
+#search form {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#search input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+#search button i {
+    font-size: 20px;
     color: rgba(79, 32, 150, 0.9);
 }
 
-.menu i:hover{
-    color: rgba(120,92,186,255);
+.icons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-nav{
-    box-shadow: 0px 14px 22px;
-    background-color: rgba(79,32,150,255);
+.icons {
+    margin-left: 20px;
 }
-.navbar{
+
+.icons i {
+    font-size: 25px;
+    color: white;
+}
+
+.icons i:hover {
+    color: rgb(120, 92, 186);
+}
+
+/*Navbar*/
+nav {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(79, 32, 150, 1);
+}
+
+.navbar {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
 }
-.navbar li{
-    float: left;
-}
 
-.navbar li a{
+.navbar li a {
     display: block;
     font-size: 20px;
     text-decoration: none;
     color: white;
     padding: 14px 20px;
 }
-.navbar li a:hover{
-    background-color: #11111127;
+
+.navbar li a:hover {
+    background-color: rgba(17, 17, 17, 0.15);
 }
 
+/*footer*/
 footer{
     background-color: rgba(128, 128, 128, 0.303);
     bottom: 0;

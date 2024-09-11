@@ -11,32 +11,51 @@
 </head>
 
 <body>
-    <header>
+    <header style="background-color: rgba(79, 32, 150, 1);">
         <div class="wrap">
             <ul class="menu">
-                <li id="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></li>
-                <li><a href="pages/contact.html" aria-label="Contato" title="Contato"><i
-                            class="bi bi-telephone-fill"></i></a></li>
-                <li><a href="#" aria-label="Carinho" title="Carrinho"><i class="bi bi-bag-fill"></i></a></li>
+                <li id="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </li>
+                <li id="search">
+                    <form action="/search" method="get">
+                        <input type="text" name="q" placeholder="Pesquisar...">
+                        <button type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </li>
+                <div class="icons-wrapper">
+                    <li class="icons">
+                        <a href="../pages/contact.html" aria-label="Contato" title="Contato">
+                            <i class="bi bi-telephone-fill"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="../pages/cart.html" aria-label="Carrinho" title="Carrinho">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                    </li>
+                </div>
             </ul>
         </div>
         <nav>
-            <div>
-                <ul class="navbar">
-                    <li><a href="#">Cachorro</a></li>
-                    <li><a href="#">Gatos</a></li>
-                    <li><a href="#">Peixes</a></li>
-                    <li><a href="#">Outros Animais</a></li>
-                    <li><a href="#">Plano de Saúde</a></li>
-                    <li><a href="#">Serviços</a></li>
-                </ul>
-            </div>
+            <ul class="navbar">
+                <li><a href="#">Cachorros</a></li>
+                <li><a href="#">Gatos</a></li>
+                <li><a href="#">Peixes</a></li>
+                <li><a href="#">Outros Animais</a></li>
+                <li><a href="#">Plano de Saúde</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="container">
+        <section class="container-card">
             <div class="card">
-                <h1 id="title" style="margin-left: 5.2%;">Meu carrinho</h1>
+                <h1 style="margin-left: 5%;">Meu carrinho</h1>
                 <article class="card-itens">
                     <figure class="products">
                         <img src="../images/prod-1.webp">
@@ -64,6 +83,8 @@
                     </figure>
                 </article>
             </div>
+        </section>
+        <section class="container-aside">
             <aside>
                 <div class="cep">
                     <h1 style="text-align: start">Consulta de CEP</h1>
@@ -81,16 +102,17 @@
                     <h1 style="text-align: start">Resumo do pedido</h1>
                     <div class="order-prod">
                         <span>Valor dos produtos(2 itens)</span>
-                        <span>5</span>
+                        <span>R$319,74</span>
                     </div>
                     <div class="order-total">
                         <strong>Total</strong>
-                        <strong>8</strong>
+                        <strong>R$319,74</strong>
                     </div>
                 </div>
             </aside>
         </section>
     </main>
+
     <script>
         function buscarEndereco() {
             var cep = document.getElementById('cepInput').value;

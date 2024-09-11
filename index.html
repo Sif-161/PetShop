@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +10,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 </head>
+
 <body>
-    <header>
+    <header style="background-color: rgba(79, 32, 150, 1);">
         <div class="wrap">
             <ul class="menu">
-                <li id="logo"><a href="index.html"><img src="images/logo.png" alt="logo" ></a></li>
-                <li><a href="pages/contact.html" aria-label="Contato" title="Contato"><i class="bi bi-telephone-fill"></i></a></li>
-                <li><a href="pages/cart.html" aria-label="Carinho" title="Carrinho"><i class="bi bi-bag-fill"></i></a></li>
+                <li id="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.png" alt="logo">
+                    </a>
+                </li>
+                <li id="search">
+                    <form action="/search" method="get">
+                        <input type="text" name="q" placeholder="Pesquisar...">
+                        <button type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </li>
+                <div class="icons-wrapper">
+                    <li class="icons">
+                        <a href="pages/contact.html" aria-label="Contato" title="Contato">
+                            <i class="bi bi-telephone-fill"></i>
+                        </a>
+                    </li>
+                    <li class="icons">
+                        <a href="pages/cart.html" aria-label="Carrinho" title="Carrinho">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                    </li>
+                </div>
             </ul>
-        </div>    
+        </div>
         <nav>
-            <div>
-                <ul class="navbar">
-                    <li><a href="#">Cachorro</a></li>
-                    <li><a href="#">Gatos</a></li>
-                    <li><a href="#">Peixes</a></li>
-                    <li><a href="#">Outros Animais</a></li>
-                    <li><a href="#">Plano de Saúde</a></li>
-                    <li><a href="#">Serviços</a></li>
-                </ul>
-            </div>
+            <ul class="navbar">
+                <li><a href="#">Cachorros</a></li>
+                <li><a href="#">Gatos</a></li>
+                <li><a href="#">Peixes</a></li>
+                <li><a href="#">Outros Animais</a></li>
+                <li><a href="#">Plano de Saúde</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
         </nav>
     </header>
     <section class="hero-section">
@@ -38,13 +60,19 @@
             </div>
         </div>
         <h2 style="color: rgba(79,32,150,255);">Bem-vindo ao PetVille!</h1>
-        <article class="hs-itens">
-                <p style="font-size: medium;">Aqui, cada visita é especial. Oferecemos produtos premium e serviços personalizados em um ambiente acolhedor, <br>com uma equipe apaixonada pronta para cuidar do seu pet como se fosse nosso. Venha nos conhecer e descubra <br>porque somos o lugar favorito dos pets e seus donos!</p>
-        </article>
-        <h1 style="color: rgba(79,32,150,255);">Sobre nós</h1>
-        <article class="hs-itens">
-            <p style="font-size: medium;">Fundado em 2008, o PetVille nasceu do amor pelos animais de Clara Martins. Começando como uma pequena loja, crescemos com a missão de oferecer o melhor em cuidados e produtos para pets. Com valores de amor, dedicação e excelência, nos tornamos uma comunidade que coloca o bem-estar dos pets em primeiro lugar.</p>
-    </article>
+            <article class="hs-itens">
+                <p style="font-size: medium;">Aqui, cada visita é especial. Oferecemos produtos premium e serviços
+                    personalizados em um ambiente acolhedor, <br>com uma equipe apaixonada pronta para cuidar do seu pet
+                    como se fosse nosso. Venha nos conhecer e descubra <br>porque somos o lugar favorito dos pets e seus
+                    donos!</p>
+            </article>
+            <h1 style="color: rgba(79,32,150,255);">Sobre nós</h1>
+            <article class="hs-itens">
+                <p style="font-size: medium;">Fundado em 2008, o PetVille nasceu do amor pelos animais de Clara Martins.
+                    Começando como uma pequena loja, crescemos com a missão de oferecer o melhor em cuidados e produtos
+                    para pets. Com valores de amor, dedicação e excelência, nos tornamos uma comunidade que coloca o
+                    bem-estar dos pets em primeiro lugar.</p>
+            </article>
     </section>
     <main>
         <h1 id="title">Produtos mais vendidos</h1>
@@ -112,7 +140,7 @@
                     <button id="b" title="Adicionar ao carrinho" type="button"><b>Adicionar</b></button>
                 </figure>
             </article>
-            
+
         </section>
         <br>
         <section class="container">
@@ -122,14 +150,16 @@
                     <img src="images/serv-1.jpg" alt="Banho e Tosa">
                     <div class="services-content">
                         <h2>Banho e tosa</h2>
-                        <p>Oferecemos serviços completos de banho e tosa para cães e gatos, utilizando produtos de alta qualidade e técnicas especializadas para garantir o bem-estar do seu pet</p>
+                        <p>Oferecemos serviços completos de banho e tosa para cães e gatos, utilizando produtos de alta
+                            qualidade e técnicas especializadas para garantir o bem-estar do seu pet</p>
                     </div>
                 </article>
                 <article class="services-itens">
                     <img src="images/serv-2.png" alt="Consultas Veterinárias">
                     <div class="services-content">
                         <h2>Consultas veterinárias</h2>
-                        <p>Nossos veterinários estão prontos para atender seu pet com consultas de rotina, vacinas, exames e tratamentos específicos para garantir a saúde e felicidade do seu animal</p>
+                        <p>Nossos veterinários estão prontos para atender seu pet com consultas de rotina, vacinas,
+                            exames e tratamentos específicos para garantir a saúde e felicidade do seu animal</p>
                     </div>
                 </article>
             </div>
@@ -139,14 +169,17 @@
                     <img src="images/emp-1.webp" alt="julia lima">
                     <div class="employee-content">
                         <h2>Júlia Lima - Especialista em Tosa e Banho</h2>
-                        <p>Nossa especialista em tosa e banho cuida de cada pet com muito carinho e habilidade, garantindo que seu amigo de quatro patas fique limpo e com um visual incrível</p>
+                        <p>Nossa especialista em tosa e banho cuida de cada pet com muito carinho e habilidade,
+                            garantindo que seu amigo de quatro patas fique limpo e com um visual incrível</p>
                     </div>
                 </article>
                 <article class="employee-itens">
                     <img src="images/emp-2.jpg" alt="Dr. Carlos Almeida">
                     <div class="employee-content">
                         <h2>Dr. Carlos Almeida - Veterinário Chefe</h2>
-                        <p>Com mais de 15 anos de experiência em clínica veterinária, o Dr. Carlos é especialista em cuidados preventivos e tratamentos complexos. Ele é conhecido por seu carinho e dedicação aos animais.</p>
+                        <p>Com mais de 15 anos de experiência em clínica veterinária, o Dr. Carlos é especialista em
+                            cuidados preventivos e tratamentos complexos. Ele é conhecido por seu carinho e dedicação
+                            aos animais.</p>
                     </div>
                 </article>
             </div>
@@ -184,27 +217,36 @@
             <h2>O que nossos clientes dizem</h2>
             <div class="feedback-grid">
                 <article class="feedback-card">
-                    <p>"Adorei o atendimento no Pet Shop! Os funcionários são sempre muito atenciosos e conhecem bem os produtos. Meu cachorro ficou super feliz com os brinquedos novos e eu me senti bem informado sobre as melhores opções."</p>
+                    <p>"Adorei o atendimento no Pet Shop! Os funcionários são sempre muito atenciosos e conhecem bem os
+                        produtos. Meu cachorro ficou super feliz com os brinquedos novos e eu me senti bem informado
+                        sobre as melhores opções."</p>
                     <span>- Ana Souza</span>
                 </article>
                 <article class="feedback-card">
-                    <p>"Comprei ração e acessórios para o meu gato e fiquei impressionado com a qualidade dos produtos. A ração é ótima e o meu gato está mais saudável e feliz. Recomendo a todos que procuram produtos de qualidade para seus pets."</p>
+                    <p>"Comprei ração e acessórios para o meu gato e fiquei impressionado com a qualidade dos produtos.
+                        A ração é ótima e o meu gato está mais saudável e feliz. Recomendo a todos que procuram produtos
+                        de qualidade para seus pets."</p>
                     <span>- Carlos Silva</span>
                 </article>
                 <article class="feedback-card">
-                    <p>"O serviço de banho e tosa do pet shop é excelente! Meu cãozinho sempre sai limpo, cheiroso e com um visual impecável. A equipe é muito cuidadosa e trata os animais com muito carinho."</p>
+                    <p>"O serviço de banho e tosa do pet shop é excelente! Meu cãozinho sempre sai limpo, cheiroso e com
+                        um visual impecável. A equipe é muito cuidadosa e trata os animais com muito carinho."</p>
                     <span>- Maria Oliveira</span>
                 </article>
                 <article class="feedback-card">
-                    <p>"O Pet Shop tem uma variedade incrível de produtos para todos os tipos de pets. Sempre encontro o que preciso, desde alimentos especiais até brinquedos e acessórios. É o melhor lugar para quem quer qualidade e variedade."</p>
+                    <p>"O Pet Shop tem uma variedade incrível de produtos para todos os tipos de pets. Sempre encontro o
+                        que preciso, desde alimentos especiais até brinquedos e acessórios. É o melhor lugar para quem
+                        quer qualidade e variedade."</p>
                     <span>- João Santos</span>
                 </article>
                 <article class="feedback-card">
-                    <p>"Excelente loja! O atendimento é maravilhoso e sempre encontro produtos de ótima qualidade. Meu cachorro adora os brinquedos e os petiscos que compro aqui."</p>
+                    <p>"Excelente loja! O atendimento é maravilhoso e sempre encontro produtos de ótima qualidade. Meu
+                        cachorro adora os brinquedos e os petiscos que compro aqui."</p>
                     <span>- Julia Costa</span>
                 </article>
                 <article class="feedback-card">
-                    <p>"Ótima experiência de compra. A equipe é super simpática e eficiente. Comprei um novo colar para meu gato e ele está adorando. Voltarei com certeza."</p>
+                    <p>"Ótima experiência de compra. A equipe é super simpática e eficiente. Comprei um novo colar para
+                        meu gato e ele está adorando. Voltarei com certeza."</p>
                     <span>- Pedro Lima</span>
                 </article>
             </div>
@@ -233,4 +275,5 @@
         </section>
     </footer>
 </body>
+
 </html>
