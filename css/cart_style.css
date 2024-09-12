@@ -1,8 +1,6 @@
 main {
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
-    background-color: rgba(120, 92, 186, 0.39);
     width: 90%;
     margin: auto;
     margin-top: 100px;
@@ -15,10 +13,11 @@ main {
 }
 
 .card {
+    background-color: rgba(120, 92, 186, 0.39);
     border-radius: 5px 5px 13px 13px;
     padding-bottom: 1%;
     padding-top: 1%;
-    width: 90%;
+    width: 98%;
 }
 
 .card-itens {
@@ -27,7 +26,7 @@ main {
     border-radius: 10px;
     margin-left: 4.8%;
     background-color: white;
-    width: 100%;
+    width: 91%;
     margin-bottom: 3%;
 }
 
@@ -80,7 +79,7 @@ main {
 }
 
 #delete:hover, .amount button:hover{
-    color: #09090966;
+    color: #5124949c;
 }
 
 .container-aside {
@@ -89,44 +88,70 @@ main {
 }
 
 aside {
+    background-color: rgba(120, 92, 186, 0.39);
     border-radius: 5px 5px 13px 13px;
     padding: 20px;
 }
 
-.cep, .order-summary {
+.cep, .order-summary , .discount {
     background-color: white;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 5%;
     border-radius: 10px;
     width: 90%;
 }
 
-.cep button {
-    border-radius: 5px;
+
+.cep button, .discount button{
+    border-radius: 8px;
     cursor: pointer;
     background-color: rgba(245, 229, 253, 255);
     border-color: rgba(234, 216, 250, 255);
     color: rgba(120, 92, 186, 255);
     margin-left: 5%;
     font-size: large;
+    padding: 3%;
 }
 
-.cep button:hover{
-    background-color: #dddddd0c
+.cep button:hover, .discount button:hover{
+    background-color: #f5e5fd7a;
 }
 
-.cep input {
-    border-radius: 5px;
+.cep input, .discount input{
+    border-radius: 8px;
     padding-top: 3%;
     padding-bottom: 3%;
     font-size: large;
     width: 70%;
+    border-color: rgba(128, 128, 128, 0.514);
 }
 
-.order-prod, .order-total {
+.order-itens{
+    background-color: #f3eee84b;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.order-prod, .order-total, .order-discount, .order-subtotal, .order-freight {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5%;
+}
+
+
+#pay{
+    margin-top: 3%;
+    background-color: #49a971;
+    color: white;
+    border: 0;
+    width: 90%;
+    margin-left: 5%;
+    font-size: large;
+    padding: 1% 0% 1% 0%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#pay:hover{
+    background-color: #49a97194;
 }
 
 /*Ajuste do site para notbooks*/

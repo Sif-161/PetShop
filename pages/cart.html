@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/cart_style.css">
 </head>
-<body>
+<body style="background-color: rgba(243,238,232,255);">
     <header style="background-color: rgba(79, 32, 150, 1);">
         <div class="wrap">
             <ul class="menu">
@@ -85,7 +85,7 @@
         </section>
         <section class="container-aside">
             <aside>
-                <div class="cep">
+                <div class="cep" style="padding-top: 1%;">
                     <h1 style="text-align: start">Consulta de CEP</h1>
                     <div class="box">
                         <div class="text">
@@ -97,21 +97,45 @@
                         <p id="endereco"></p>
                     </div>
                 </div>
-                <div class="order-summary">
+                <div class="order-summary" style="padding-top: 1%;">
                     <h1 style="text-align: start">Resumo do pedido</h1>
-                    <div class="order-prod">
-                        <span style="font-size: medium;">Valor dos produtos(2 itens)</span>
-                        <span style="font-size: medium;">R$319,74</span>
+                    <div class="order-itens">
+                        <article class="order-prod">
+                            <span style="font-size: medium;">Valor dos produtos(2 itens)</span>
+                            <span style="font-size: medium;">R$319,74</span>
+                        </article >
+                        <article  class="order-discount">
+                            <span style="font-size: medium;">Desconto</span>
+                            <span>R$0,00</span>
+                        </article >
+                        <hr>
+                        <article  class="order-subtotal">
+                            <h2 style="font-size: medium;">Subtotal</h2>
+                            <h3 style="font-size: medium;">R$299,50</h3>
+                        </article >
+                        <article  class="order-freight">
+                            <span style="font-size: medium;">Frete</span>
+                            <span style="font-size: medium;">R$20,24</span>
+                        </article >
+                        <hr>
+                        <article  class="order-total">
+                            <strong style="font-size: large;">Total</strong>
+                            <strong style="font-size: large;">R$319,74</strong>
+                        </article>
                     </div>
-                    <div class="order-total">
-                        <strong style="font-size: large;">Total</strong>
-                        <strong style="font-size: large;">R$319,74</strong>
+                    <button id="pay">Comprar</button>
+                </div>
+                <div class="discount">
+                    <div class="box">
+                        <div class="text">
+                            <input placeholder="Cupom" type="text" id="cupom" autocomplete="off">
+                            <button>Aplicar</button>
+                        </div>
                     </div>
                 </div>
             </aside>
         </section>
     </main>
-
     <script>
         function buscarEndereco() {
             var cep = document.getElementById('cepInput').value;
