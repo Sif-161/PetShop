@@ -20,9 +20,8 @@ main {
     width: 98%;
 }
 
-.card-itens {
+#card-itens {
     display: flex;
-    flex-direction: column;
     border-radius: 10px;
     margin-left: 4.8%;
     background-color: white;
@@ -33,21 +32,21 @@ main {
 .products {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
 }
 
-.products img {
+#productImage{
     width: 90px;
     height: auto;
     border-radius: 10px;
 }
 
-.products figcaption {
-    width: 38%;
+#productDetails{
+    width: 100%;
     color: rgb(88, 88, 88);
 }
 
-.products span{
+#productPrice{
     font-size: medium;
 }
 
@@ -62,7 +61,7 @@ main {
     gap: 5px;
 }
 
-.amount button{
+.amount button, .products button{
     border: none;
     background-color: transparent;
     color: rgba(79,32,150,255);
@@ -93,7 +92,7 @@ aside {
     padding: 20px;
 }
 
-.cep, .order-summary , .discount {
+.cep, .order-summary , .cupom {
     background-color: white;
     margin-top: 2%;
     padding: 5%;
@@ -102,7 +101,7 @@ aside {
 }
 
 
-.cep button, .discount button{
+.cep button, .cupom button{
     border-radius: 8px;
     cursor: pointer;
     background-color: rgba(245, 229, 253, 255);
@@ -113,11 +112,11 @@ aside {
     padding: 3%;
 }
 
-.cep button:hover, .discount button:hover{
+.cep button:hover, .cupom button:hover{
     background-color: #f5e5fd7a;
 }
 
-.cep input, .discount input{
+.cep input, .cupom input{
     border-radius: 8px;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -132,7 +131,7 @@ aside {
     border-radius: 10px;
 }
 
-.order-prod, .order-total, .order-discount, .order-subtotal, .order-freight {
+.order-content{
     display: flex;
     justify-content: space-between;
 }
@@ -155,31 +154,30 @@ aside {
 }
 
 /*Ajuste do site para notbooks*/
-@media only screen and (max-width: 90em){
+@media only screen and (max-width: 1728px){
     .card{
-        margin-left: 3%;
-        width: 90%;
+        width: auto;
     }
 
-    .products img{
+    #productImage{
         width: 50px;
         height: auto;
     }
     
-    .products figcaption{
+    #productDetails{
         font-size: smaller;
     }
-    .products span{
+    #productPrice{
         font-size: smaller;
     }
 
     .amount input{
-        width: 100%;
+        width: 2em;
         font-size: small;
     }
 
-    aside:not(.card){
-        margin-right: 30%;
+    aside{
+        margin-left: 10%;
         width: 90%;
     }
 
@@ -188,16 +186,49 @@ aside {
         height: auto;
     }
 
-    .cep input{
+    .cep input, .cupom input{
         width: 70%;
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: small;
     }
-    .cep button {
+    .cep button, .cupom button{
         font-size: small;
     }
     .text-address{
         font-size: 14px;
+    }
+}
+
+/*Ajuste do site para celulares*/
+@media only screen and (max-width: 430px){
+    main{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .container-card, .container-aside{
+        width: 100%;
+        margin: 0;
+    }
+
+    .card, aside{
+        margin: 0;
+        width: auto;
+        margin-bottom: 5%;
+    }
+
+    #card-itens{
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    .products{
+        flex-wrap: wrap;
+    }
+
+    #productDetails{
+        font-size: medium;
     }
 }
