@@ -71,7 +71,7 @@ main {
 
 .amount input{
     text-align: center;
-    width: 20%;
+    width: 2em;
     padding-top: 8%;
     padding-bottom: 8%;
     border-radius: 5px;
@@ -136,6 +136,10 @@ aside {
     justify-content: space-between;
 }
 
+.prod{
+    padding-bottom: 1em;
+}
+
 
 #pay{
     margin-top: 3%;
@@ -157,6 +161,9 @@ aside {
 @media only screen and (max-width: 1728px){
     .card{
         width: auto;
+    }
+    .products{
+        gap: 60px;
     }
 
     #productImage{

@@ -3,14 +3,15 @@ const selectedProduct = localStorage.getItem('selectedProduct');
 const prodPrice = localStorage.getItem('prodPrice');
 const prodDetails = localStorage.getItem('prodDetails');
 
+
 const productImages = {
-    'prod-1': '../images/prod-1.webp',
-    'prod-2': '../images/prod-2.webp',
-    'prod-3': '../images/prod-3.webp',
-    'prod-4': '../images/prod-4.webp',
-    'prod-5': '../images/prod-5.jpg',
-    'prod-6': '../images/prod-6.jpg',
-    'prod-7': '../images/prod-7.webp',
+    'prod-1': '../images/prod/prod-1.webp',
+    'prod-2': '../images/prod/prod-2.webp',
+    'prod-3': '../images/prod/prod-3.webp',
+    'prod-4': '../images/prod/prod-4.webp',
+    'prod-5': '../images/prod/prod-5.jpg',
+    'prod-6': '../images/prod/prod-6.jpg',
+    'prod-7': '../images/prod/prod-7.webp',
 };
 
 document.getElementById('productImage').src = productImages[selectedProduct];
@@ -30,14 +31,19 @@ document.querySelectorAll('.amount button').forEach(button => {
     });
 });
 
+
 //script para remover item do carrinho
 document.getElementById('delete').addEventListener('click', function (event){
     event.preventDefault();
     const product = this.closest('.products');
     product.remove();
+    localStorage.removeItem('selectedProduct');
+    localStorage.removeItem('prodPrice');
+    localStorage.removeItem('prodDetails');
 });
 
 
+//script do resumo de pedidos
 
 
 //script de busca endereço
