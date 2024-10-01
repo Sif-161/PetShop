@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrinho</title>
     <link rel="stylesheet" href="../css/header_and_footer_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/cart_style.css">
 </head>
 
-<body style="background-color: rgba(243,238,232,255);">
-    <header style="background-color: rgba(79, 32, 150, 1);">
-        <div class="wrap">
+<body>
+    <header>
+        <div class="container-menu">
             <ul class="menu">
                 <li id="logo">
                     <a href="../index.html">
@@ -36,40 +36,20 @@
                     <li class="icons">
                         <a href="../pages/cart.html" aria-label="Carrinho" title="Carrinho">
                             <i class="bi bi-bag-fill"></i>
+                            <span class="cart-count"></span>
                         </a>
                     </li>
                 </div>
             </ul>
         </div>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#">Cachorros</a></li>
-                <li><a href="#">Gatos</a></li>
-                <li><a href="#">Peixes</a></li>
-                <li><a href="#">Outros Animais</a></li>
-                <li><a href="#">Plano de Saúde</a></li>
-                <li><a href="#">Serviços</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section class="container-card">
-            <div class="card">
+            <div class="container-content">
                 <h1 style="margin-left: 5%;">Meu carrinho</h1>
-                <article id="card-itens">
-                    <figure class="products">
-                        <img src="" id="productImage">
-                        <figcaption id="productDetails"></figcaption>
-                        <div class="amount">
-                            <button>-</button>
-                            <input type="text" maxlength="3" value="1">
-                            <button>+</button>
-                        </div>
-                        <b><span id="productPrice"></span></b>
-                        <button title="Remover do carrinho" id="delete"><i class="bi bi-trash-fill"></i></button>
-                    </figure>
-                </article>
+                <div class="card"></div>
             </div>
+
         </section>
         <section class="container-aside">
             <aside>
@@ -85,13 +65,13 @@
                         <p id="endereco"></p>
                     </div>
                 </div>
-                
+
                 <div class="order-summary" style="padding-top: 1%;">
                     <h1 style="text-align: start">Resumo do pedido</h1>
                     <div class="order-itens">
                         <article class="order-content prod">
-                            <span style="font-size: medium;" id="prodItens">Valor dos produtos(2 itens)</span>
-                            <span style="font-size: medium;" id="prodValue">R$319,74</span>
+                            <span style="font-size: medium;" id="prodItens"></span>
+                            <span style="font-size: medium;" id="prodValue"></span>
                         </article>
                         <article class="order-content discount">
                             <span style="font-size: medium;" id="discountValue">Desconto</span>
@@ -100,16 +80,16 @@
                         <hr>
                         <article class="order-content subtotal">
                             <h2 style="font-size: medium;">Subtotal</h2>
-                            <h3 style="font-size: medium;" id="subtotalValue">R$299,50</h3>
+                            <h3 style="font-size: medium;" id="subtotalValue"></h3>
                         </article>
                         <article class="order-content freight">
                             <span style="font-size: medium;">Frete</span>
-                            <span style="font-size: medium;" id="freightValue">R$20,24</span>
+                            <span style="font-size: medium;" id="freightValue"></span>
                         </article>
                         <hr>
                         <article class="order-content total">
                             <strong style="font-size: large;">Total</strong>
-                            <strong style="font-size: large;" id="totalValue">R$319,74</strong>
+                            <strong style="font-size: large;" id="totalValue"></strong>
                         </article>
                     </div>
                     <button id="pay">Comprar</button>

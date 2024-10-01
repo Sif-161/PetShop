@@ -1,3 +1,20 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 main {
     display: flex;
     justify-content: space-between;
@@ -12,7 +29,7 @@ main {
     margin-left: 3%;
 }
 
-.card {
+.container-content{
     background-color: rgba(120, 92, 186, 0.39);
     border-radius: 5px 5px 13px 13px;
     padding-bottom: 1%;
@@ -20,13 +37,14 @@ main {
     width: 98%;
 }
 
-#card-itens {
+.card article {
     display: flex;
     border-radius: 10px;
     margin-left: 4.8%;
     background-color: white;
     width: 91%;
     margin-bottom: 3%;
+    
 }
 
 .products {
@@ -43,7 +61,8 @@ main {
 
 #productDetails{
     width: 100%;
-    color: rgb(88, 88, 88);
+    color: rgb(127, 127, 127);
+    
 }
 
 #productPrice{
@@ -67,9 +86,10 @@ main {
     color: rgba(79,32,150,255);
     font-size: 20px;
     cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-.amount input{
+#productQuantity{
     text-align: center;
     width: 2em;
     padding-top: 8%;
@@ -110,6 +130,7 @@ aside {
     margin-left: 5%;
     font-size: large;
     padding: 3%;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .cep button:hover, .cupom button:hover{
@@ -152,6 +173,7 @@ aside {
     padding: 1% 0% 1% 0%;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
 }
 #pay:hover{
     background-color: #49a97194;
