@@ -230,7 +230,7 @@ aside {
 }
 
 /*Ajuste do site para celulares*/
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 932px){
     main{
         flex-direction: column;
         width: 100%;
