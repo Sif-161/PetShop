@@ -124,11 +124,7 @@ main h1{
     border-radius: 10px 10px 10px;
 }
 
-.services-section{
-    background-color: rgba(79,32,150,255);
-}
-
-.employee-section{
+.services-section, .employee-section{
     background-color: rgba(79,32,150,255);
 }
 

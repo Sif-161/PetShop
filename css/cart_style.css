@@ -230,13 +230,8 @@ aside {
 }
 
 /*Ajuste do site para celulares*/
-<<<<<<< HEAD
-@media only screen and (max-width: 430px) {
-    main {
-=======
 @media only screen and (max-width: 932px){
     main{
->>>>>>> 2a98a9dce04c178e6c6d6338e8dd66034f840132
         flex-direction: column;
         width: 100%;
         margin-top: 50px;
@@ -279,7 +274,6 @@ aside {
         height: auto;
         border-radius: 10px;
     }
-<<<<<<< HEAD
 
     #productDetails {
         flex-grow: 2;
@@ -310,6 +304,5 @@ aside {
         padding: 5%;
         border-radius: 5px;
     }
-=======
->>>>>>> 2a98a9dce04c178e6c6d6338e8dd66034f840132
+
 }

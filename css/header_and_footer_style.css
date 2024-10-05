@@ -138,14 +138,10 @@ footer{
 
 .footer-section{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 50px;
 }
 
-.social-media{
-    width: 26%;
-    margin-inline: 12%;
-}
 
 .social-media i{
     margin-right: 20px;

@@ -71,3 +71,56 @@ body, html{
 #b:hover{
     background-color: #dddddda5;
 }
+
+@media only screen and (max-width: 932px) {
+     /*parte do footer*/
+     footer {
+        padding: 20px;
+    }
+    
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .footer-section p {
+        font-size: 16px;
+    }
+    
+    .social-media {
+        display: flex;
+        text-align: center;
+        margin: 0;
+    }
+
+    .social-media i{
+        margin-left: auto;
+    }
+    
+    .social-media a {
+        font-size: 24px;
+    }
+    
+    .others {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .info p {
+        font-size: 14px;
+    }
+    
+    .links a {
+        font-size: 14px;
+    }
+    
+}
