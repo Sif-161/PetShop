@@ -3,7 +3,7 @@ function headerMobile() {
     console.log("Largura da janela:", window.innerWidth);
     console.log("Caminho da URL:", window.location.pathname);
 
-    if (window.innerWidth <= 932 && window.location.pathname === '../pages/cart.html') {
+    if (window.innerWidth <= 932 && window.location.pathname === '/pages/cart.html') {
         header.innerHTML = `
         <div class="container-menu">
             <ul class="menu">
