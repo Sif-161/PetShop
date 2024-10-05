@@ -46,6 +46,10 @@ function loadCart() {
             width: 30%;
             transition: background-color 0.2s, color 0.2s;
         `;
+
+        if (window.innerWidth <= 430) {
+            button.style.width = '80%';
+        }
         button.addEventListener('mouseover', () => {
             button.style.backgroundColor = 'rgba(245, 229, 253, 255)';
         });

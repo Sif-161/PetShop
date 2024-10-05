@@ -1,0 +1,164 @@
+@media only screen and (max-width: 430px) {
+
+    main{
+        margin-top: 40%;
+    }
+    /*parte inicial*/
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .slideshow {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+    
+    .hs-itens {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .hs-itens p {
+        font-size: 14px;
+    }
+    
+    .hero-section h1, .hero-section h2 {
+        text-align: center;
+    }
+
+    #slide img{
+        width: 100%;
+        height: auto;
+    }
+
+    /*parte de produtos*/
+
+    main .products-grid{
+        margin-left: 0;
+    }
+    
+    .products-grid {
+        grid-template-columns: none;
+        grid-template-rows: none;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 5px;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .products {
+        flex: 0 0 200px;
+        margin: 0 10px;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .products figure {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .products img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .products figcaption {
+        font-size: medium;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .products span {
+        font-size: small;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    #b {
+        width: 80%;
+        padding: 5px;
+        font-size: small;
+        margin: 0 auto;
+    }
+    
+    .products figure > * {
+        margin: 0 auto;
+    }
+
+    /*parte de serviços e empregados*/
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section {
+        width: auto;
+        margin: 10%;
+    }
+    
+    .grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 20px;
+    }
+    
+    .services-itens, .employee-itens {
+        flex: 0 0 250px;
+        margin: 0 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .services-itens img, .employee-itens img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 0;
+        
+    }
+    
+    .services-content h2, .employee-content h2 {
+        font-size: larger;
+        margin-bottom: 10px;
+    }
+    
+    .services-content p, .employee-content p {
+        font-size: medium;
+        line-height: 1.6;
+    }
+
+    /*parte do blog*/
+
+    .blog-cards{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 20px;
+        justify-content: unset;
+
+    }
+
+    .card{
+        flex: 0 0 200px;
+        padding: 20px;
+        display: flex;
+    }
+    
+}

@@ -1,4 +1,4 @@
-/*Header*/
+/* Header */
 .container-menu {
     margin: 0 auto;
     padding: 0 200px;
@@ -14,18 +14,20 @@
     padding: 20px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
-.meu li{
-    margin: 0 150px;
+.menu li {
+    margin: 0 20px;
 }
 
 #logo {
-    flex: 0 1;
+    flex: 0 1 auto; 
 }
-#logo img{
-    width: 125px; 
+
+#logo img {
+    width: 125px;
     height: 90px;
 }
 
@@ -81,6 +83,7 @@
 .icons i:hover {
     color: rgb(120, 92, 186);
 }
+
 
 .cart-count {
     position: absolute;
@@ -171,4 +174,70 @@ footer{
 
 .others a:hover {
     text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 430px) {
+    .container-menu {
+        flex-direction: column;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    #logo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .icons {
+        margin-left: auto;
+        position: relative;
+        margin-right: 0;
+        margin-left: 0; 
+    }
+
+    .icons + .icons {
+        margin-left: 0; 
+    }
+
+    .bi-telephone-fill{
+        margin-left: 115px;
+    }
+
+    #search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #search form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #search input[type="text"] {
+        width: 80%;
+        max-width: 600px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #search button {
+        margin-left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar li a {
+        padding: 10px;
+        font-size: 16px;
+    }
 }

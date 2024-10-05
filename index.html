@@ -7,6 +7,7 @@
     <title>PetVille</title>
     <link rel="stylesheet" href="css/header_and_footer_style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/mediaQuerry_index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
@@ -53,28 +54,32 @@
             </ul>
         </nav>
     </header>
-    <section class="hero-section">
-        <div class="slideshow">
-            <div id="slide-1">
-                <img src="images/banner/banner-1.webp" alt="banner-1" id="banner">
-            </div>
-        </div>
-        <h2 style="color: rgba(79,32,150,255);">Bem-vindo ao PetVille!</h1>
-            <article class="hs-itens">
-                <p style="font-size: medium;">Aqui, cada visita é especial. Oferecemos produtos premium e serviços
-                    personalizados em um ambiente acolhedor, <br>com uma equipe apaixonada pronta para cuidar do seu pet
-                    como se fosse nosso. Venha nos conhecer e descubra <br>porque somos o lugar favorito dos pets e seus
-                    donos!</p>
-            </article>
-            <h1 style="color: rgba(79,32,150,255);">Sobre nós</h1>
-            <article class="hs-itens">
-                <p style="font-size: medium;">Fundado em 2008, o PetVille nasceu do amor pelos animais de Clara Martins.
-                    Começando como uma pequena loja, crescemos com a missão de oferecer o melhor em cuidados e produtos
-                    para pets. Com valores de amor, dedicação e excelência, nos tornamos uma comunidade que coloca o
-                    bem-estar dos pets em primeiro lugar.</p>
-            </article>
-    </section>
     <main>
+        <section class="hero-section">
+            <div class="slideshow">
+                <div id="slide">
+                    <img src="images/banner/banner-1.webp" alt="banner-1" id="banner">
+                </div>
+            </div>
+            <h2 style="color: rgba(79,32,150,255);">Bem-vindo ao PetVille!</h1>
+                <article class="hs-itens">
+                    <p style="font-size: medium;">Aqui, cada visita é especial. Oferecemos produtos premium e serviços
+                        personalizados em um ambiente acolhedor, <br>com uma equipe apaixonada pronta para cuidar do seu
+                        pet
+                        como se fosse nosso. Venha nos conhecer e descubra <br>porque somos o lugar favorito dos pets e
+                        seus
+                        donos!</p>
+                </article>
+                <h1 style="color: rgba(79,32,150,255);">Sobre nós</h1>
+                <article class="hs-itens">
+                    <p style="font-size: medium;">Fundado em 2008, o PetVille nasceu do amor pelos animais de Clara
+                        Martins.
+                        Começando como uma pequena loja, crescemos com a missão de oferecer o melhor em cuidados e
+                        produtos
+                        para pets. Com valores de amor, dedicação e excelência, nos tornamos uma comunidade que coloca o
+                        bem-estar dos pets em primeiro lugar.</p>
+                </article>
+        </section>
         <h1 id="title">Produtos mais vendidos</h1>
         <section class="products-grid">
             <article class="products">
@@ -83,16 +88,19 @@
                     <figcaption id="details-prod-1">Ração Seca Nutrilus Pro Carne para Cães Adultos</figcaption>
                     <span id="price-prod-1"><b>R$161,42</b></span>
                     <br>
-                    <button id="b" title="Adicionar ao carrinho" onclick="selectProduct('prod-1',)"><b>Adicionar</b></button>
+                    <button id="b" title="Adicionar ao carrinho"
+                        onclick="selectProduct('prod-1',)"><b>Adicionar</b></button>
                 </figure>
             </article>
             <article class="products">
                 <figure>
                     <img src="images/prod/prod-2.webp" alt="prod-2">
-                    <figcaption id="details-prod-2">Areia Higiênica Meau Biodegradável Grãos Médios para Gatos</figcaption>
+                    <figcaption id="details-prod-2">Areia Higiênica Meau Biodegradável Grãos Médios para Gatos
+                    </figcaption>
                     <span id="price-prod-2"><b>R$158,32</b></span>
                     <br>
-                    <button id="b" title="Adicionar ao carrinho" onclick="selectProduct('prod-2')"><b>Adicionar</b></button>
+                    <button id="b" title="Adicionar ao carrinho"
+                        onclick="selectProduct('prod-2')"><b>Adicionar</b></button>
                 </figure>
             </article>
             <article class="products">
@@ -101,7 +109,8 @@
                     <figcaption id="details-prod-3">Tapete Higiênico Meau Cheirinho Cítrico para Cães</figcaption>
                     <span id="price-prod-3"><b>R$60,30</b></span>
                     <br>
-                    <button id="b" title="Adicionar ao carrinho" onclick="selectProduct('prod-3')"><b>Adicionar</b></button>
+                    <button id="b" title="Adicionar ao carrinho"
+                        onclick="selectProduct('prod-3')"><b>Adicionar</b></button>
                 </figure>
             </article>
             <article class="products">
@@ -110,25 +119,30 @@
                     <figcaption id="details-prod-4">Ração Seca Suprema Sabor Carne para Cães Adultos</figcaption>
                     <span id="price-prod-4"><b>R$127,92</b></span>
                     <br>
-                    <button id="b" title="Adicionar ao carrinho" onclick="selectProduct('prod-4')"><b>Adicionar</b></button>
+                    <button id="b" title="Adicionar ao carrinho"
+                        onclick="selectProduct('prod-4')"><b>Adicionar</b></button>
                 </figure>
             </article>
             <article class="products">
                 <figure>
                     <img src="images/prod/prod-5.jpg" alt="prod-5">
-                    <figcaption id="details-prod-5">Ração Úmida Nestlé Purina Felix Fantastic Tiritas Carne para Gatos Adultos</figcaption>
+                    <figcaption id="details-prod-5">Ração Úmida Nestlé Purina Felix Fantastic Tiritas Carne para Gatos
+                        Adultos</figcaption>
                     <span id="price-prod-5"><b>R$1,20</b></span>
                     <br>
-                    <button id="b" title="Adicionar ao carrinho" onclick="selectProduct('prod-5')"><b>Adicionar</b></button>
+                    <button id="b" title="Adicionar ao carrinho"
+                        onclick="selectProduct('prod-5')"><b>Adicionar</b></button>
                 </figure>
             </article>
             <article class="products">
                 <figure>
                     <img src="images/prod/prod-6.jpg" alt="prod-6">
-                    <figcaption id="details-prod-6">Ração Seca Liva Super Premium para Cães Adultos de Raças Grandes e Gigantes</figcaption>
+                    <figcaption id="details-prod-6">Ração Seca Liva Super Premium para Cães Adultos de Raças Grandes e
+                        Gigantes</figcaption>
                     <span id="price-prod-6"><b>R$263,42</b></span>
                     <br>
-                    <button id="b" title="Adicionar ao carrinho" onclick="selectProduct('prod-6')"><b>Adicionar</b></button>
+                    <button id="b" title="Adicionar ao carrinho"
+                        onclick="selectProduct('prod-6')"><b>Adicionar</b></button>
                 </figure>
             </article>
             <article class="products">
@@ -137,7 +151,8 @@
                     <figcaption id="details-prod-7">Tapete Higiênico Future Pet Carvão Ativado para Cães</figcaption>
                     <span id="price-prod-7"><b>R$87,12</b></span>
                     <br>
-                    <button id="b" title="Adicionar ao carrinho" onclick="selectProduct('prod-7')"><b>Adicionar</b></button>
+                    <button id="b" title="Adicionar ao carrinho"
+                        onclick="selectProduct('prod-7')"><b>Adicionar</b></button>
                 </figure>
             </article>
 
@@ -146,42 +161,48 @@
         <section class="container">
             <div class="section services-section">
                 <h1 style="color: white;">Nossos serviços!</h1>
-                <article class="services-itens">
-                    <img src="images/serv/serv-1.jpg" alt="Banho e Tosa">
-                    <div class="services-content">
-                        <h2>Banho e tosa</h2>
-                        <p>Oferecemos serviços completos de banho e tosa para cães e gatos, utilizando produtos de alta
-                            qualidade e técnicas especializadas para garantir o bem-estar do seu pet</p>
-                    </div>
-                </article>
-                <article class="services-itens">
-                    <img src="images/serv/serv-2.png" alt="Consultas Veterinárias">
-                    <div class="services-content">
-                        <h2>Consultas veterinárias</h2>
-                        <p>Nossos veterinários estão prontos para atender seu pet com consultas de rotina, vacinas,
-                            exames e tratamentos específicos para garantir a saúde e felicidade do seu animal</p>
-                    </div>
-                </article>
+                <div class="grid">
+                    <article class="services-itens">
+                        <img src="images/serv/serv-1.jpg" alt="Banho e Tosa">
+                        <div class="services-content">
+                            <h2>Banho e tosa</h2>
+                            <p>Oferecemos serviços completos de banho e tosa para cães e gatos, utilizando produtos de
+                                alta
+                                qualidade e técnicas especializadas para garantir o bem-estar do seu pet</p>
+                        </div>
+                    </article>
+                    <article class="services-itens">
+                        <img src="images/serv/serv-2.png" alt="Consultas Veterinárias">
+                        <div class="services-content">
+                            <h2>Consultas veterinárias</h2>
+                            <p>Nossos veterinários estão prontos para atender seu pet com consultas de rotina, vacinas,
+                                exames e tratamentos específicos para garantir a saúde e felicidade do seu animal</p>
+                        </div>
+                    </article>
+                </div>
             </div>
             <div class="section employee-section">
                 <h1 style="color: white;">Nossa equipe!</h1>
-                <article class="employee-itens">
-                    <img src="images/emp/emp-1.webp" alt="julia lima">
-                    <div class="employee-content">
-                        <h2>Júlia Lima - Especialista em Tosa e Banho</h2>
-                        <p>Nossa especialista em tosa e banho cuida de cada pet com muito carinho e habilidade,
-                            garantindo que seu amigo de quatro patas fique limpo e com um visual incrível</p>
-                    </div>
-                </article>
-                <article class="employee-itens">
-                    <img src="images/emp/emp-2.jpg" alt="Dr. Carlos Almeida">
-                    <div class="employee-content">
-                        <h2>Dr. Carlos Almeida - Veterinário Chefe</h2>
-                        <p>Com mais de 15 anos de experiência em clínica veterinária, o Dr. Carlos é especialista em
-                            cuidados preventivos e tratamentos complexos. Ele é conhecido por seu carinho e dedicação
-                            aos animais.</p>
-                    </div>
-                </article>
+                <div class="grid">
+                    <article class="employee-itens">
+                        <img src="images/emp/emp-1.webp" alt="julia lima">
+                        <div class="employee-content">
+                            <h2>Júlia Lima - Especialista em Tosa e Banho</h2>
+                            <p>Nossa especialista em tosa e banho cuida de cada pet com muito carinho e habilidade,
+                                garantindo que seu amigo de quatro patas fique limpo e com um visual incrível</p>
+                        </div>
+                    </article>
+                    <article class="employee-itens">
+                        <img src="images/emp/emp-2.jpg" alt="Dr. Carlos Almeida">
+                        <div class="employee-content">
+                            <h2>Dr. Carlos Almeida - Veterinário Chefe</h2>
+                            <p>Com mais de 15 anos de experiência em clínica veterinária, o Dr. Carlos é especialista em
+                                cuidados preventivos e tratamentos complexos. Ele é conhecido por seu carinho e
+                                dedicação
+                                aos animais.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
         <section class="blog">

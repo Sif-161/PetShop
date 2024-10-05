@@ -230,34 +230,78 @@ aside {
 }
 
 /*Ajuste do site para celulares*/
-@media only screen and (max-width: 430px){
-    main{
+@media only screen and (max-width: 430px) {
+    main {
         flex-direction: column;
         width: 100%;
         margin-top: 50px;
     }
 
-    .container-card, .container-aside{
+    .container-card, .container-aside {
         width: 100%;
         margin: 0;
     }
 
-    .card, aside{
+    .container-content {
+        margin-top: 30%;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .card, aside {
         margin: 0;
         width: auto;
         margin-bottom: 5%;
     }
 
-    #card-itens{
+    #card-itens {
         width: 100%;
         margin-left: 1%;
     }
 
-    .products{
-        flex-wrap: wrap;
+    .products {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        gap: 10px;
+        margin-bottom: 20px;
+        width: 100%;
     }
 
-    #productDetails{
-        font-size: medium;
+    #productImage {
+        width: 80px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #productDetails {
+        flex-grow: 2;
+        font-size: small;
+        white-space: normal;
+        overflow: hidden;
+    }
+
+    .amount {
+        display: flex;
+        align-items: center;
+        gap: 5px; 
+        flex-shrink: 0; 
+    }
+
+    .amount button {
+        border: none;
+        background-color: transparent;
+        color: rgba(79,32,150,255);
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    #productQuantity {
+        text-align: center;
+        width: 2em;
+        padding: 5%;
+        border-radius: 5px;
     }
 }
