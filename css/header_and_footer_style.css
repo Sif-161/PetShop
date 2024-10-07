@@ -173,7 +173,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 768px) {
     .container-menu {
         flex-direction: column;
         padding: 0 10px;

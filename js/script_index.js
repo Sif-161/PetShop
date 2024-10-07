@@ -77,6 +77,30 @@ function updateCartCount(){
     }
 }
 
+document.querySelector('#mode-theme').addEventListener('click', () => {
+    const body = document.querySelector('body');
+    const button = document.querySelector('#mode-theme');
+    const heroSection = document.querySelector('.hero-section');
+    const container = document.querySelector('.container');
+    const feedback = document.querySelector('.feedback');
+
+
+
+    body.classList.toggle('dark-mode');
+
+    if(body.classList.contains('dark-mode')){
+        heroSection.style.backgroundColor = 'black';
+        container.style.backgroundColor = 'black';
+        feedback.style.backgroundColor = 'black';
+        button.className = 'bi bi-brightness-high-fill';
+    }else{
+        heroSection.style.backgroundColor = 'white';
+        container.style.backgroundColor = 'white';
+        feedback.style.backgroundColor = 'white';
+        button.className = 'bi bi-brightness-high';
+    }
+});
+
 
 
 window.onscroll = function (){
